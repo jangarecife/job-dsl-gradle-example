@@ -12,12 +12,13 @@ job("$basePath/grails example build") {
     triggers {
         scm 'H/5 * * * *'
     }
-//    steps {
+    steps {
+        printf('Echo w. printf')
 //        grails {
 //            useWrapper true
 //            targets(['test-app', 'war'])
 //        }
-//    }
+    }
 }
 
 job("$basePath/grails example deploy") {
