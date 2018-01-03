@@ -24,7 +24,7 @@ branches.each { branch ->
             scm 'H/30 * * * *'
         }
         steps {
-            grails 'test-app war', true
+            shell 'echo Hello'
         }
     }
 
