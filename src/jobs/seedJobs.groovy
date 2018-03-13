@@ -26,31 +26,31 @@ def package_type = ""
 //For hver model vi har i Jenkins
 for (def workflow : workflows) {
 
-    folder("model-dev-jobs") {
-        authorization {
-            permission('hudson.model.Item.Read', 'AP_JenkinsCI_Prod_Analytiker')
-            permission('hudson.model.Item.Discover', 'AP_JenkinsCI_Prod_Analytiker')
-        }
-    }
-
-    folder("model-master-jobs") {
-        authorization {
-            permission('hudson.model.Item.Read', 'AP_JenkinsCI_Prod_Analytiker')
-            permission('hudson.model.Item.Discover', 'AP_JenkinsCI_Prod_Analytiker')
-        }
-    }
-
-    folder("tools-master-jobs") {
-        authorization {
-            permission('hudson.model.Item.Read', 'AP_JenkinsCI_Prod_Analytiker')
-            permission('hudson.model.Item.Discover', 'AP_JenkinsCI_Prod_Analytiker')
-        }
-    }
-
+//    folder("model-dev-jobs") {
+//        authorization {
+//            permission('hudson.model.Item.Read', 'AP_JenkinsCI_Prod_Analytiker')
+//            permission('hudson.model.Item.Discover', 'AP_JenkinsCI_Prod_Analytiker')
+//        }
+//    }
+//
+//    folder("model-master-jobs") {
+//        authorization {
+//            permission('hudson.model.Item.Read', 'AP_JenkinsCI_Prod_Analytiker')
+//            permission('hudson.model.Item.Discover', 'AP_JenkinsCI_Prod_Analytiker')
+//        }
+//    }
+//
+//    folder("tools-master-jobs") {
+//        authorization {
+//            permission('hudson.model.Item.Read', 'AP_JenkinsCI_Prod_Analytiker')
+//            permission('hudson.model.Item.Discover', 'AP_JenkinsCI_Prod_Analytiker')
+//        }
+//    }
+//
     folder("XXXtrain-jobs")
-    folder("prod-jobs-batch")
-    folder("prod-jobs-deploy")
-    folder("admin-jobs")
+//    folder("prod-jobs-batch")
+//    folder("prod-jobs-deploy")
+//    folder("admin-jobs")
 
     if(workflow.Organisation ==~ /.*CoDe/) {
         package_type = "model"
