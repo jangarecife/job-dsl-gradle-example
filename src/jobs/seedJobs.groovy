@@ -48,8 +48,8 @@ for (def workflow : workflows) {
 //    }
 //
 //    folder("train-jobs")
-//    folder("prod-jobs-batch")
-//    folder("prod-jobs-deploy")
+    folder("prod-jobs-batch")
+    folder("prod-jobs-deploy")
 //    folder("admin-jobs")
 
     if(workflow.Organisation ==~ /.*CoDe/) {
