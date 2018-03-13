@@ -33,12 +33,12 @@ for (def workflow : workflows) {
 //        }
 //    }
 //
-//    folder("model-master-jobs") {
-//        authorization {
-//            permission('hudson.model.Item.Read', 'AP_JenkinsCI_Prod_Analytiker')
-//            permission('hudson.model.Item.Discover', 'AP_JenkinsCI_Prod_Analytiker')
-//        }
-//    }
+    folder("model-master-jobs") {
+        authorization {
+            permission('hudson.model.Item.Read', 'AP_JenkinsCI_Prod_Analytiker')
+            permission('hudson.model.Item.Discover', 'AP_JenkinsCI_Prod_Analytiker')
+        }
+    }
 //
 //    folder("tools-master-jobs") {
 //        authorization {
@@ -47,7 +47,7 @@ for (def workflow : workflows) {
 //        }
 //    }
 //
-    folder("XXXtrain-jobs")
+//    folder("train-jobs")
 //    folder("prod-jobs-batch")
 //    folder("prod-jobs-deploy")
 //    folder("admin-jobs")
