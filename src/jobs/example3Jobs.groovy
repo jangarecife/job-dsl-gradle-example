@@ -100,7 +100,7 @@ for (def workflow : workflows) {
 
             definition {
                 cps {
-                    script(readFileFromWorkspace('Jenkins/JobDSL/batch.groovy'))
+  //todo                  script(readFileFromWorkspace('Jenkins/JobDSL/batch.groovy'))
                     sandbox(false)
                 }
             }
@@ -137,7 +137,7 @@ for (def workflow : workflows) {
 
         definition {
             cps {
-                script(readFileFromWorkspace('Jenkins/JobDSL/workflow_prod_deploy.groovy'))
+//todo                script(readFileFromWorkspace('Jenkins/JobDSL/workflow_prod_deploy.groovy'))
                 sandbox(false)
             }
         }
@@ -270,7 +270,7 @@ def setupWorkflowJob(def context, def workflow, def gitRepoServer, def cId) {
 
         definition {
             cps {
-                script(readFileFromWorkspace('Jenkins/JobDSL/workflow.groovy'))
+//todo                script(readFileFromWorkspace('Jenkins/JobDSL/workflow.groovy'))
                 sandbox(false)
             }
         }
